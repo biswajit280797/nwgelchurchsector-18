@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins',sans-serif;
+    color: #222;
+}
+
+.navbar{
+    padding: 0.8rem;
+    position: sticky;
+    
+}
+
+.navbar .container-fluid{
+    position: sticky;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size:1.1em !important;
+}
+
+/*Image Slider*/
+#slides .carousel-item{
+    width: 100%;
+    height: 70%;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+#slides .carousel-caption{
+    position: absolute;
+    color: white;
+    top: 50%;    
+}
+
+#slides .carousel-caption h1{
+    text-shadow: 1px 1px 15px #000;
+    text-align: center;
+}
+
+/*jumbotron*/
+.jumbotron .heading{
+    margin-bottom: 30px;
+}
+
+.jumbotron .para{
+    text-align: center;
+    align-items: center;
+}
+
+/*welcome section*/
+.padding{
+    margin-top: 10px;
+}
+
+.welcome h1{
+    margin-bottom: 10px;
+}
+
+/*Three column section*/
+.threecolumn .row{
+    margin-top: 70px;
+}
+
+/*Two Column Section*/
+#news{
+    height: 70%;
+  background-color: lightblue;
+}
+
+
+#news .display-4{
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+#news .carousel-item{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+#news .carousel-item p{
+    font-size: 20px;
+}
+
+#news .lead{
+    margin-bottom: 10px;
+}
+
+/*Gallery*/
+
+/*Admin*/
+#admin{
+    margin-top: 60px;
+}
+
+/*Cards*/
+#admin .card-img-top{
+    clip-path: circle(50.0% at 50% 50%);
+}
+
+#cards .card{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#card-view .carousel-indicators li{
+    background-color: blue;
+}
+
+
+/*About*/
+#about{
+    background-color: lightgray;
+}
+
+#about .col-lg-6{
+    padding: 40px;
+}
+
+#about .col-lg-6 h2{
+    text-align: center;
+}
+
+/*Connect*/
+.social a{
+    font-size: 4.5em;
+    padding: 3rem;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00aced;
+}
+
+.fa-google-plus-g{
+    color: #dd4b39;
+}
+
+.fa-instagram{
+    color: #517fa4;
+}
+
+.fa-youtube{
+    color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #d5d5d5;
+}
+
+#connect .row{
+    margin-top: 60px;
+}
+
+.social{
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+.footer{
+    background-color: skyblue ;
+}
+
+.footer h5{
+    margin-top: 10px;
+}
+
+
+/*Media Queries--*/
+@media (max-width: 992px) {
+    
+    .social a{
+        font-size: 4em;
+        padding: 2rem;
+    }
+
+ /*image slider*/
+ #slides .carousel-caption{
+     color: white;
+     top: 60%;
+    }
+    
+    #slides .carousel-caption .display-2{
+        text-shadow: 1px 1px 15px #000;
+        text-align: center;
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 768px){
+    
+    /*image slider*/
+    #slides .carousel-caption{
+        position: absolute;
+        color: white;
+        top: 60%;
+    }
+    
+    #slides .carousel-caption h1{
+        text-shadow: 1px 1px 15px #000;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    .welcome .display-4{
+        font-size: 300%;
+    }
+
+    .social a{
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }   
+
+    /*Admin*/
+    /*Cards*/
+
+    #admin .card-img-top{
+        clip-path: circle(50.0% at 50% 50%);
+    }
+
+    #cards .col-md-4{
+        padding-top: 0px;
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-bottom: 0px;
+    }
+
+    #card-view .carousel-indicators{
+        color: blue;
+    }
+
+    /*jumbotron*/
+    .jumbotron .heading{
+        margin-bottom: 10px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 250%;
+    }
+
+    .jumbotron .lead{
+        font-size: 100%;
+    }
+}    
+
+@media (max-width: 576px){
+
+    /*Image slider*/
+    #slides .carousel-item{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-inner img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #slides .carousel-caption{
+        position: absolute;
+        color: white;
+        top: 50%;
+        
+    }
+    
+    #slides .carousel-caption .display-2{
+        text-shadow: 1px 1px 15px #000;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    /*Jumbotron*/
+    .jumbotron .heading{
+        margin-bottom: 0px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 250%;
+    }
+
+    .jumbotron .lead{
+        font-size: 100%;
+    }
+
+    /*Three column section*/
+    #three-column{
+        padding: 0px;
+    }
+
+    /*Admin*/
+    #admin{
+        margin-top: 20px;
+    }
+    
+    /*Cards*/
+    #cards .col-md-4{
+        padding: 0px;
+    }
+    /*About*/
+    #about{
+        background-color: lightgray;
+    }
+    
+    #about .col-lg-6{
+        padding: 20px;
+    }
+    
+    #about .col-lg-6 h2{
+        text-align: center;
+    }
+
+    #about .col-lg-6 p{
+        overflow: hidden;
+    }
+}

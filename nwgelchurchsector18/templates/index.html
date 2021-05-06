@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}"/>
+    <title> NWGEL Church Sector-18 </title>
+</head>
+
+<body>
+
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#slides" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="#news" class="nav-link">News</a></li>
+                <li class="nav-item active"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item active"><a href="#admin" class="nav-link">Admin</a></li>
+                <li class="nav-item active"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item active"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--image slider-->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1" class="active"></li>
+        <li data-target="#slides" data-slide-to="2" class="active"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+            <img src="{% static 'images/church.png' %}" alt="#">
+            <div class="carousel-caption">
+                <h1 class="display-2">Welcome to NWGEL Church Sector-18</h1>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="{% static 'images/church2.jpg' %}" alt="#">
+        </div>
+    </div>
+</div>
+
+<!--Jumbotron-->
+<div id="verse" class="container-fluid text-center">
+    <div class="row text-center jumbotron">
+        <div class="col-12 heading">
+            <h1 class="display-4">Verse of the day</h1>
+        </div>
+        <div class="para col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+            <p class="lead text-center">““Blessed is the man who trusts in the LORD, whose trust is the LORD. He is like a tree planted by water, that sends out its roots by the stream, and does not fear when heat comes, for its leaves remain green, and is not anxious in the year of drought, for it does not cease to bear fruit.”” -Jeremiah 17:7-8</p>
+        </div>
+    </div>
+</div>
+
+<!--welcome section-->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Statistics</h1>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!--Three Column Section-->
+<div id="three-column" class="container-fluid text-center padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img id="family" src="{% static 'images/group(2).png' %}" alt="#">
+            <h3>No. of families</h3>
+            <h5>145</h5>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img id="tola" src="{% static 'images/tola.png' %}" alt="#">
+            <h3>No. of tola's</h3>
+            <h5>70</h5>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <img id="mandli" src="{% static 'images/mandli.png' %}" alt="#">
+            <h3>No. of mandli's</h3>
+            <h5>4</h5>
+        </div>
+    </div>
+</div>
+
+<!--Two Column Section-->
+<div id="news" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+        <li data-target="#news" data-slide-to="0" class="active"></li>
+        <li data-target="#news" data-slide-to="1" class="active"></li>
+        <li data-target="#news" data-slide-to="2" class="active"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">News</h1>
+            </div>
+        </div>
+
+        <!--<hr style="width: 20%; border: 2px solid black; margin-top: 10px;">-->
+
+        <div class="carousel-item active">
+            <div class="col-12 text-center">
+                <p class="lead text-center">““Blessed is the man who trusts in the LORD, whose trust is the LORD. 
+                    He is like a tree planted by water, that sends out its roots by the stream, and does not fear when heat comes, for its leaves remain green, and is not anxious in the year of drought, for it does not cease to bear fruit.”” -Jeremiah 17:7-8</p>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <div class="col-12 text-center">
+                <p class="lead text-center">““And my God will supply every need of yours according to his riches in glory in Christ Jesus.““ — Philippians 4:19</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Gallery-->
+
+<!--Admin-->
+<div id="admin" class="container-fluid padding">
+            <!--Meet the team-->
+        <div id="heading" class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Administration</h1>
+            </div>
+            <!--<hr style="width: 30%; border: 1px solid grey;">-->
+        </div>
+
+            <!--Cards-->
+        
+        <div id="card-view" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#card-view" data-slide-to="0" class="active"></li>
+                    <li data-target="#card-view" data-slide-to="1" class="active"></li>
+                    <li data-target="#card-view" data-slide-to="2" class="active"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="cards" class="row container-fluid padding">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/parcharak.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Vijay Sameer Lakra</h4>
+                                        <p class="card-text">Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/secreatory.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Barsinghar Ekka</h4>
+                                        <p class="card-text">Secreatory</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/parcharak.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Vijay Sameer Lakra</h4>
+                                        <p class="card-text">Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div id="cards" class="row container-fluid padding">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/parcharak.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Vijay Sameer Lakra</h4>
+                                        <p class="card-text">Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/parcharak.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Vijay Sameer Lakra</h4>
+                                        <p class="card-text">Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="{% static 'images/parcharak.jpeg' %}">
+                                    <div class="card-body text-center" >
+                                        <h4 class="card-title">Mr. Vijay Sameer Lakra</h4>
+                                        <p class="card-text">Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+</div>
+
+<!--About-->
+<div id="about" class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>About</h2>
+            <p>NWGEL Church Sector-18 was established in the year 1965.</p>
+            <p>Resize the browser window to see the effect. Responsive web design has become
+                more important as the amount of mobile traffic now accounts
+                for more than half of the mobile internet traffic
+            </p>
+            <br>
+            <a href="#" class="btn btn-primary">Read More</a>
+            <br>
+        </div>
+
+        <div class="col-lg-6">
+            <img src="{% static 'images/church.png' %}" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<!--Connect-->
+<div id="connect" class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect</h2>
+        </div>
+        <div class="social col-12 padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<footer id="contact" class="footer">
+    <div class="conatiner-fluid padding">
+        <div class="row text-center">
+            <div class="col-12">
+                <h5>Contact</h5>
+                <hr class="light">
+                <p>7008511677</p>
+                <p>biswajit280797@gmail.com</p>
+                <p>Sector-18,Rourkela</p>
+                <p>Rourkela,Odisha,769005</p>
+            </div>
+
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy; biswajit280797@gmail.com</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

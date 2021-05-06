@@ -1,0 +1,8 @@
+assets/
+blog/
+django/
+Ecommerce/
+images/
+website/
+*.txt
+*.zip
